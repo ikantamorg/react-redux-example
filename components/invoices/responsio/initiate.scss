@@ -1,0 +1,24 @@
+@import '../../../../../stylesheets/variables/base_colors';
+@import '../../../../../stylesheets/variables/corporate_colors';
+@import '../../../../../stylesheets/variables/fonts';
+
+.invoice-chat__modal {
+  padding-bottom: 0px !important;
+}
+
+.invoice-chat__messages-icon {
+  color: $color-silver;
+  font-size: $font-size-20;
+}
+
+.invoice-chat__messages-icon--unread {
+  color: $color-ci-blue;
+}
+
+.badge.invoice-chat__messages-unread-count {
+  top: -13px;
+  left: -10px;
+  background: $color-ci-endeavour;
+  color: $color-white;
+  font-weight: bold;
+}

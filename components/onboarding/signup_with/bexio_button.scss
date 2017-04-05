@@ -1,0 +1,20 @@
+@import '../../../../../stylesheets/variables/base_colors';
+
+$color-bexio-bg: #BBDC00;
+$color-bexio-bg-hover: #acca04;
+
+.a-btn-bexio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-bexio-bg;
+  height: 60px;
+  width: 100%;
+  border: none;
+  color: $color-black;
+
+  &:hover {
+    background-color: $color-bexio-bg-hover;
+    color: $color-black;
+  }
+}

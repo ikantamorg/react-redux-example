@@ -1,0 +1,27 @@
+@import '../../../../../stylesheets/variables/corporate_colors';
+@import '../../../../../stylesheets/variables/fonts';
+
+.a-invoice-upload-congratulations {
+  padding-top: 40%;
+
+  .a-invoice-upload-congratulations__icon {
+    margin: auto;
+    height: 90px;
+    width: 90px;
+    background: url(../../../../../images/green-check-circle.svg);
+    background-size: 90px 90px;
+  }
+
+  .a-invoice-upload-congratulations__header {
+    font-size: $font-size-42;
+    color: $color-ci-black;
+  }
+
+  .a-invoice-upload-congratulations__sub-header {
+    font-size: $font-size-18;
+  }
+
+  .a-invoice-upload-congratulations__description {
+    font-size: $font-size-14;
+  }
+}

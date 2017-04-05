@@ -1,0 +1,12 @@
+.a-my-profile__verify-contract {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  .a-my-profile__button {
+    min-width: 82px;
+    text-align: center;
+    outline: none;
+  }
+}

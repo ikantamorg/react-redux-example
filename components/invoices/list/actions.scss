@@ -1,0 +1,12 @@
+.invoices-table-actions {
+  .invoices-table-actions__btn {
+    width: 60px;
+  }
+
+  //Bootstrap min-width override
+  //We cannot set the class or modifier through react-bootstrap
+  .dropdown-menu {
+    min-width: 70px !important;
+    max-width: 100px;
+  }
+}

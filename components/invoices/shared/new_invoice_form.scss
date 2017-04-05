@@ -1,0 +1,53 @@
+@import '../../../../../stylesheets/variables/corporate_colors';
+@import '../../../../../stylesheets/variables/base_colors';
+
+.new-invoice-form {
+  .new-invoice-form__label-wrapper {
+    margin-bottom: 28px;
+  }
+
+  label {
+    font-weight: 300;
+    color: $color-nobel;
+    margin-bottom: 4px;
+  }
+
+  .form-control {
+    height: 36px;
+    border-color: $color-whisper;
+    border-radius: 3px;
+  }
+
+  .has-error {
+    .form-control {
+      border-color: $color-ci-persimmon;
+      box-shadow: none;
+    }
+    .input-group-addon {
+      border-color: $color-ci-persimmon;
+      color: $color-ci-persimmon;
+    }
+  }
+
+  .new-invoice-form__error {
+    display: none;
+  }
+
+  .input-group-addon {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background: $color-white-smoke-light;
+  }
+
+  .input-group-addon + .form-control {
+    border-left: 0;
+  }
+
+  .react-datepicker__input-container {
+    display: block;
+  }
+
+  .alert.alert-danger {
+    display: block;
+  }
+}

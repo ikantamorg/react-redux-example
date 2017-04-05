@@ -1,0 +1,33 @@
+@import '../../../../../stylesheets/variables/base_colors';
+@import '../../../../../stylesheets/variables/fonts';
+
+.a-seller-signup-with {
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+
+  h1.a-seller-signup-with__heading {
+    color: $color-black;
+    font-weight: 100;
+    font-size: $font-size-36;
+    line-height: 48px;
+    display: inline-block;
+  }
+
+  .a-seller-signup-with__options-container {
+    display: flex;
+    justify-content: center;
+
+    .a-seller-signup-with__options {
+      min-width: 300px;
+
+      .a-seller-signup-with__btn {
+        border-radius: 2px;
+        padding: 6px 16px;
+        height: 60px;
+        width: 100%;
+      }
+    }
+  }
+
+}

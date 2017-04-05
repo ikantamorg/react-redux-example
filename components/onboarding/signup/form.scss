@@ -1,0 +1,60 @@
+@import '../../../../../stylesheets/variables/base_colors';
+
+$form-text-color: #A1A1A1;
+
+.a-seller-signup__form-container {
+  display: flex;
+  justify-content: center;
+
+  .a-seller-signup__form {
+    max-width: 400px;
+
+    .a-seller-signup__form-label {
+      font-weight: normal;
+    }
+
+    .a-seller-signup__form-fullname {
+      margin: 0px;
+      padding: 0 0 0 15px;
+    }
+
+    .a-seller-signup__form-row {
+      display: flex;
+      align-items: center;
+      padding: 10px 0px;
+
+      .a-seller-signup__row-description {
+        .a-seller-signup__description-title {
+          font-weight: 600;
+          padding: 0px;
+          margin: 0px 0px 5px 0px;
+          color: $form-text-color;
+        }
+
+        .a-seller-signup__description-content {
+          line-height: 15px;
+          color: $form-text-color;
+          margin-bottom: 0px;
+        }
+      }
+
+      &:hover {
+        background: white;
+
+        .a-seller-signup__row-description {
+          .a-seller-signup__description-title,
+          .a-seller-signup__description-content {
+            color: $color-night-rider;
+          }
+        }
+      }
+    }
+    .a-seller-signup__form-row--block {
+      display: block;
+    }
+  }
+
+  .a-seller-signup__form--wide {
+    max-width: 650px;
+  }
+}

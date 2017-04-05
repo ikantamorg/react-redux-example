@@ -1,0 +1,89 @@
+@import '../../../../../../stylesheets/variables/corporate_colors';
+@import '../../../../../../stylesheets/variables/base_colors';
+@import '../../../../../../stylesheets/variables/dimensions';
+
+.a-imported-software {
+  .a-imported-software__desc {
+    color: $color-grey-light;
+  }
+
+  .a-software-box {
+    background: $color-white;
+    border: 1px solid $color-ci-light-grey;
+    box-shadow: 0 0 1px 0 transparentize($color-black, 0.8), 0 1px 3px 0 transparentize($color-black, 0.92);
+    border-radius: 3px;
+
+    .a-software-box__item {
+      margin: 0 auto;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid $color-white-smoke;
+
+      &:last-of-type {
+        border-bottom: none;
+      }
+
+      &:hover {
+        cursor: pointer;
+        background-color: $color-white-smoke-super-light;
+      }
+
+      &.a-software-box__item--disabled {
+        &, &:hover {
+          background-color: $color-white-smoke-super-light;
+          cursor: not-allowed;
+        }
+      }
+
+      &.a-software-box__item--selected {
+        &, &:hover {
+          background-color: $color-white;
+          cursor: auto;
+        }
+
+        .a-software-box__item-selected-icon {
+          color: $color-ci-green;
+        }
+      }
+
+      .a-software-box__item-logo {
+        margin-right: 20px;
+        width: 140px;
+        height: 25px;
+        background-size: 60px auto;
+        background-repeat: no-repeat;
+
+        &.a-software-box__item-logo--bexio {
+          background-image: url('../../../../../../images/bexio_transparent.png');
+        }
+
+        &.a-software-box__item-logo--sage {
+          background-image: url('../../../../../../images/sage.png');
+        }
+
+        &.a-software-box__item-logo--rma {
+          background-image: url('../../../../../../images/run-my-accounts.png');
+          margin-right: 7px;
+          background-size: 80px 30px;
+          height: 40px;
+        }
+      }
+
+      .a-software-box__item-icon {
+        width: 10px;
+        height: 10px;
+
+        g {
+          path {
+            fill: $color-black;
+          }
+        }
+      }
+
+      .a-software-box__item-content {
+        padding-right: 15px;
+      }
+    }
+  }
+}

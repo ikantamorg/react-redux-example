@@ -1,0 +1,15 @@
+@import '../../../../../stylesheets/variables/base_colors';
+
+.aside-modal.aside-modal--new-invoice-modal {
+  .aside-modal__progress {
+    text-align: center;
+    margin-top: -8px;
+    margin-bottom: 17px;
+  }
+
+  .aside-modal__subtitle {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 26px;
+  }
+}

@@ -1,0 +1,17 @@
+@import '../../../../../stylesheets/variables/base_colors';
+@import '../../../../../stylesheets/variables/corporate_colors';
+
+.invoice-chat__details {
+  .invoice-chat__amount {
+    color: $color-grey-light;
+  }
+
+  .invoice-chat__amount-value, .invoice-chat__repayment-date {
+    font-weight: bold;
+  }
+
+  .invoice-chat__explanation {
+    color: $color-ci-blue;
+  }
+
+}

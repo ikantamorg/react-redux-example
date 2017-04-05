@@ -1,0 +1,69 @@
+@import '../../../../../stylesheets/variables/base_colors';
+
+.invoices-table--no-border {
+  border: none !important;
+}
+
+@media (max-width: 375px) {
+  .a-table .a-table__header .a-table__cell {
+    padding: 10px 0;
+    font-size: 12px;
+  }
+}
+
+.currencyFilter {
+  display: flex;
+  padding: 10px;
+  padding-left: 25px;
+  background-color: $color-snow;
+  border-top: 1px solid $color-snow;
+
+  div {
+    margin-left: 10px;
+    display: flex;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    .check {
+      border: 1px solid $color-mischka;
+      width: 16px;
+      height: 16px;
+      border-radius: 20px;
+      background: white;
+      position: absolute;
+
+      &::before {
+        display: block;
+        content: '';
+        padding: 4px;
+        border-radius: 5px;
+        margin: 3px;
+        cursor: pointer;
+      }
+    }
+
+    label {
+      font-weight: normal;
+      width: 138px;
+      cursor: pointer;
+      padding-left: 36px;
+      position: relative;
+      z-index: 10;
+    }
+
+    input[type=radio] {
+      visibility: hidden;
+      position: absolute;
+
+      &:checked ~ .check {
+        border-color: $color-dodger-blue-1;
+
+        &::before {
+          background: $color-dodger-blue-1;
+        }
+      }
+    }
+  }
+}

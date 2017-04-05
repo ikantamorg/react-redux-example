@@ -1,0 +1,25 @@
+@import '../../../../../stylesheets/variables/base_colors';
+@import '../../../../../stylesheets/variables/corporate_colors';
+@import '../../../../../stylesheets/variables/fonts';
+.a-seller-signup__credit {
+  background: $color-white;
+  border: 1px solid $color-ci-light-grey;
+  padding: 50px 0px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  .ibox-content {
+    border: none;
+  }
+  .a-seller-signup__credit-headline {
+    color: $color-black;
+    font-weight: 400;
+  }
+  .a-seller-signup__credit-description {
+    font-size: $font-size-14;
+  }
+  .a-seller-signup__outcome-icon {
+    color: $color-black;
+    font-size: $font-size-72;
+  }
+}

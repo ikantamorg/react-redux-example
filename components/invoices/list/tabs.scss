@@ -1,0 +1,12 @@
+@media(max-width: 375px) {
+  .nav-tabs > li {
+    a {
+      padding: 10px;
+      font-weight: 500;
+    }
+
+    &.active a {
+      font-weight: 600;
+    }
+  }
+}

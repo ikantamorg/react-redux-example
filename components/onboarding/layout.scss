@@ -1,0 +1,23 @@
+@import '../../../../stylesheets/variables/base_colors';
+@import '../../../../stylesheets/variables/fonts';
+
+.a-seller-onboarding {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px 10px;
+  min-height: 600px;
+
+  h1.a-seller-onboarding__heading {
+    color: $color-black;
+    font-weight: 100;
+    font-size: $font-size-36;
+  }
+
+  .a-seller__signup-btn {
+    border-radius: 2px;
+    padding: 6px 16px;
+    text-transform: uppercase;
+    min-width: 90px;
+  }
+}
